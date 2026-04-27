@@ -1,23 +1,28 @@
+import java.util.Scanner;
+
 public class SentenciaIf03Alt {
     public static void main(String[] args) {
+        Scanner Crepe = new Scanner(System.in);
         double nota1, nota2, nota3;
         double promedio;
 
         System.out.println("Q");
-        nota1 = Integer.parseInt(System.console().readLine());
+        nota1 = Crepe.nextDouble();
 
         System.out.println("Q");
-        nota2 = Integer.parseInt(System.console().readLine());
+        nota2 = Crepe.nextDouble();
 
         System.out.println("Q");
-        nota3 = Integer.parseInt(System.console().readLine());
+        nota3 = Crepe.nextDouble();
 
-        promedio = (nota1+nota2+nota3)/3;
+        promedio = ((double)nota1+(double)nota2+(double)nota3)/3;
 
         if (promedio >= 10.5) {
-            System.out.println("Felicidades has aprobado!!");
+            System.out.printf("%8.2f",promedio);
+            System.out.println(" Felicidades has aprobado!!");
         } else {
-            System.out.println("Lo siento, pal otro año será!!!");
+            System.out.printf("%8.2f",promedio);
+            System.out.println(" Lo siento, pal otro año será!!!");
         }
     }
 }
