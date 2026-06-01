@@ -6,7 +6,7 @@ public class Matrix32a126 {
         System.out.println("Matrix");
 
         do {
-            System.out.println((char) ((int)(Math.random()*95 + 32)));
+            System.out.print((char) ((int)(Math.random()*95 + 32)) + " ");
         } while (Matrix == Matrix);
     }
 }
